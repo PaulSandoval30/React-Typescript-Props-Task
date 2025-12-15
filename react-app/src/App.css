@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #24252a;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  gap: 1.5em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #ebebeb;
+  padding: 2em;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 7px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  height: 300px;
+}
+
+.card .card-header {
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card  .card-header .position {
+  font-style: italic;
+  color: rgb(235, 139, 30);
+  font-weight: 600;
+}
+
+.card .card-details .row {
+  display: flex;
+  gap: .25em;
+}
+
+.card .card-details .row .label {
+  font-weight: 600;
+}
+
+.card .card-details .row span {
+  font-weight: 400;
+}
+
+.cards::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
