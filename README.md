@@ -1,1 +1,1 @@
-# React-Typescript-UseProps-UseEffect-Task
+# React-Typescript-Props-Task
